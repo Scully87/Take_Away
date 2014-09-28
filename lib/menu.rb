@@ -3,16 +3,15 @@ class Menu
 attr_accessor :dishes
 
 	def initialize
-		@dishes = []
+			@dishes = []
 	end
 
 	def add_dish(dish)
-		dishes << dish
+			dishes << dish
 	end
-
+	
 	def list_dishes
 			@dishes.each { |dish| dish.to_s } 
 	end
-
 end
 	

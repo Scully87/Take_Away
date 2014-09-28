@@ -10,7 +10,7 @@ describe 'Menu' do
 		end
 	end
 
-	context "does" do
+	context "will be altered to" do
 		it "add a dish" do
 			expect(menu.add_dish(pizza)).to eq([pizza])
 		end
