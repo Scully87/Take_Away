@@ -1,4 +1,4 @@
-require 'webmock/rspec'
+#require 'webmock/rspec'
 require 'send'
 
 	describe Send do
@@ -9,7 +9,7 @@ require 'send'
 	let(:from) { '+441233800175' }
 	let(:to) { '+447884496850'}
 	(time = (Time.now + (60*60)).strftime("at %I:%M%p"))
-	let(:message) { "Thank you, your order will arrive before #{time} you fat twat!!!!" }
+	let(:message) { "Thank you, your order will arrive before #{time} you fatty!!!!" }
 
 	
 	it "should have an account_sid" do
@@ -45,7 +45,7 @@ require 'send'
 	# @client.account.messages.create({
 	# 	:to => "+447884496850",     
  #    	:from => "+441233800175",  
- #   		:body => "Thank you, your order will arrive before #{time} you fat twat!!!!" 
+ #   		:body => "Thank you, your order will arrive before #{time} you fatty!!!!" 
  #    })
 
 end

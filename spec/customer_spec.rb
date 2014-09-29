@@ -12,8 +12,4 @@ describe Customer do
 		expect(customer.number).to eq("+441233800175")
 	end
 
-	# it "is sent a text saying order will be delievered within an hour" do
-	# 	expect.(cutomer).to receive(:sms)
-	# 	customer.sms
-	# end
 end
