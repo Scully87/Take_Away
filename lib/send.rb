@@ -1,20 +1,38 @@
 require 'rubygems'
 require 'twilio-ruby'
  
-#def send
+class Send
 
-	account_sid = 'ACfc5faa1825f422c6798ea3e6d28f8257'
-	auth_token = '31680b024f874b322843b6aa7ea46cc3'
+	attr_reader :account_sid
+	attr_reader :auth_token
+	attr_reader :client
+	attr_reader :from
+	attr_reader :to
 
-	@client = Twilio::REST::Client.new account_sid, auth_token
+	def initialize
+    	@account_sid = 'ACfc5faa1825f422c6798ea3e6d28f8257'
+    	@auth_token = '31680b024f874b322843b6aa7ea46cc3'
+    	@from = '+441233800175'
+    	@to = '+447884496850'
+  	end
 
- 	#time = Time.now
- 	time60 = (Time.now + (60*60)).strftime("at %I:%M%p")
+  	def message(time = (Time.now + (60*60)).strftime("at %I:%M%p"))
+  		@message = "Thank you, your order will arrive before #{time} you fat twat!!!!"
+  	end
 
-	@client.account.messages.create({
-		:to => "+447884496850",     
-    	:from => "+441233800175",  
-   		:body => "Thank you, your order will arrive before #{time60} you fat twat!!!!" 
-    })
+end
+	# account_sid = 'ACfc5faa1825f422c6798ea3e6d28f8257'
+	# auth_token = '31680b024f874b322843b6aa7ea46cc3'
 
-#end
+	# @client = Twilio::REST::Client.new account_sid, auth_token
+
+ 
+ # 	time = (Time.now + (60*60)).strftime("at %I:%M%p")
+
+	# @client.account.messages.create({
+	# 	:to => "+447884496850",     
+ #    	:from => "+441233800175",  
+ #   		:body => "Thank you, your order will arrive before #{time} you fat twat!!!!" 
+ #    })
+
+
