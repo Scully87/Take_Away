@@ -1,5 +1,3 @@
-Task 2
-
 Write a class Takeaway.
 
 Implement the following functionality:
