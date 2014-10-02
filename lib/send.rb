@@ -3,12 +3,7 @@ require 'twilio-ruby'
  
 class Send
 
-	attr_reader :account_sid
-	attr_reader :auth_token
-	attr_reader :client
-	attr_reader :from
-	attr_reader :to
-  attr_accessor :time
+	attr_reader :account_sid, :auth_token, :client, :from, :to, :time
 
 	def initialize
     @time
