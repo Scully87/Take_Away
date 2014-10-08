@@ -2,7 +2,7 @@ require 'twilio-ruby'
 
 class Send_sms
 
-  attr_reader :from, :to, :time, :account_sid, :auth_token, :message
+  attr_reader :from, :to, :time, :account_sid, :auth_token, :body
 
   def initialize
   	@time = Time.now.strftime("at %I:%M%p")
@@ -10,7 +10,7 @@ class Send_sms
   	@auth_token = '31680b024f874b322843b6aa7ea46cc3'
   	@from = '+441233800175'
   	@to = '+447884496850'
-  	@message = "Thank you, your order will arrive before #{time}"  
+  	@body = "Thank you, your order will arrive before #{time}"  
   end
 
 # account_sid = 'ACfc5faa1825f422c6798ea3e6d28f8257'
