@@ -25,7 +25,7 @@ Takeaway
 Technologies used:
 - Ruby
 - RSpec
-- Twilio API
+- Twilio Gem
 
 How to use
 ----------
